@@ -2012,6 +2012,17 @@ body:not(.dark) #statusBarSpacer { background: #1C2B3A; }
   });
 })();
 </script>
+
+<!-- Vercel Speed Insights -->
+<script type="module">
+  import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1.0.10/dist/index.mjs';
+  
+  // Initialize Speed Insights
+  injectSpeedInsights({
+    debug: false, // Set to true during development to see events in console
+    framework: 'vanilla'
+  });
+</script>
 </head>
 <body>
 <!-- ===== AUTH OVERLAY ===== -->
